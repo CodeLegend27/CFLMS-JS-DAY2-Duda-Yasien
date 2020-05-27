@@ -174,11 +174,14 @@ function banane() {
     var b = document.getElementById("granny1").value
     var c = document.getElementById("granny2").value
 
+    a = parseInt(a)
+    b = parseInt(b)
+    c = parseInt(c)
 
     x = a + b + c
     y = x / 3
 
-    document.getElementById("ausgabe").innerHTML = ("Die Summe lautet " + x + " und der Durchschnitt beträgt" + y)
+    document.getElementById("ausgabe").innerHTML = ("Die Summe lautet " + x + " und der Durchschnitt beträgt " + y)
 
 
 
