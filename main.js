@@ -129,7 +129,7 @@ E.g. If we pass the following string 'i am a web developer' we should get the me
 'I am a web developer'
 
 Hint: Check JavaScript String charAt() Method
-*/
+
 
 
 var alf = (function() {
@@ -144,10 +144,27 @@ var alf = (function() {
 }())
 
 
+document.write(alf)*/
+
+
+var alf = (function() {
+
+    var text = " i am a web developer"
+
+    first = text.charAt(1).toUpperCase()
+    rest = text.slice(2, text.length)
+
+    return first + rest
+}())
+
+
 document.write(alf)
 
 
 /*
+
+
+
 
 Basic 6 | Product
 Create a JavaScript function to calculate the product of the values in an array. You can have 
