@@ -146,7 +146,7 @@ var alf = (function() {
 
 document.write(alf)*/
 
-
+/*
 var alf = (function() {
 
     var text = " i am a web developer"
@@ -159,25 +159,39 @@ var alf = (function() {
 
 
 document.write(alf)
+console.log("hallo")
+
+
+E.g.If user puts the following grades 3, 4, 5 the result should be:
+
+    Sum: 12
+
+Average: 4
+*/
+function banane() {
+
+    var a = document.getElementById("granny").value
+    var b = document.getElementById("granny1").value
+    var c = document.getElementById("granny2").value
+
+
+    x = a + b + c
+    y = x / 3
+
+    document.getElementById("ausgabe").innerHTML = ("Die Summe lautet " + x + " und der Durchschnitt beträgt" + y)
+
+
+
+}
+
 
 
 /*
 
 
+Create a JavaScript function that will return the number of minutes, in hours and minutes. The 
+function should accept only one argument.
 
-
-Basic 6 | Product
-Create a JavaScript function to calculate the product of the values in an array. You can have 
-as many values in an array as you want.
-
-E.g. If we pass the following values 1, 3, 7, 10, 2 we should get the number 420 printed on the
- screen.*/
-/*
- 1 Intermediate | Capitalize
-Write an anonymous JavaScript function to capitalize
- only the first letter of a string. The function accepts only one string argument.
-
-E.g. If we pass the following string 'i am a web developer' we should
- get the message 'I am a web developer'
-
-Hint: Check JavaScript String charAt() Method*/
+E.g. If we call the function and pass the number of minutes 200 we should get the message 
+"200 minutes = 3 hour(s) and 20 minute(s)."
+*/
