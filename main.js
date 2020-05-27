@@ -11,8 +11,33 @@ function crystalGazer(number_of_children, partners_name, location, job_title) {
 
 }
 crystalGazer(100, "Frau Holle&Snoopy", "Buxdehude", "Anschaffer")
+
+
+function Age_Calculator(birth_year, current_year){
+    var age = current_year-birth_year;
+    document.write("You are either " + age + " or " + (age-1) + " years old<br>");
+}
+Age_Calculator(1875, 2020);
+
+function Enhanced_Age_Calculator(birth_year){
+    var current_date = new Date();
+    var age = current_date.getFullYear() - birth_year;    
+    document.write("You are either " + age + " or " + (age-1) + " years old<br>");
+
+}
+Enhanced_Age_Calculator(1873);
+
+function Enhanced_Age_Calculator(birth_year){
+    var current_date = new Date();
+    var age = current_date.getFullYear() - birth_year;    
+    return(age);
+
+}
+var faked_age = Enhanced_Age_Calculator(2000) + 75;
+document.write(faked_age);
 */
-document.write("j")
+
+
     /*
     Basic 2 | Age Calculator
     Write a function called ageCalculator() that takes two arguments birth year and current year. 
@@ -46,8 +71,12 @@ Create a JavaScript function that converts degrees to radians. The function acce
 
 E.g. If user passes 90 degrees it should get the result of 1.57079 radians
 
-*/
 
+
+function Degree_Radian_Conversion(degrees){
+   return(degrees * (Math.PI/180));
+}
+document.write(Degree_Radian_Conversion(90));*/
 
 
 /*
@@ -66,8 +95,28 @@ You should get the following results:
 
 The area of the box is: 14
 
-The volume of the box is: 70*/
+The volume of the box is: 70
 
+
+function Area_Volume(width, height, depth){
+    var area = width * height;
+    var volume = width * height * depth;
+    var result = [area, volume];
+    return(result);
+ }
+ document.write("Area= " +  Area_Volume(5, 7)[0]);
+ document.write("<br>Volume= " +  Area_Volume(5, 7, 10)[1]);
+ */
+function Product_Array(arr){
+    var result = 1;
+    document.write(arr.length);
+    for (i = 0; i < arr.length; i++){
+        result *= arr[i];
+    }
+        return(result);
+ }
+ my_arr = [1, 3, 7, 10, 2, 10];
+ document.write("<br>Product of Array= " + Product_Array(my_arr));
 /*
 
 Basic 6 | Product
