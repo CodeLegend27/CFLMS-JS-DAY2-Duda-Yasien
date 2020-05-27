@@ -38,15 +38,15 @@ document.write(faked_age);
 */
 
 
-    /*
-    Basic 2 | Age Calculator
-    Write a function called ageCalculator() that takes two arguments birth year and current year. 
-    Calculate 2 possible ages based on those
-     years (two, because we don't know the birth month).
+/*
+Basic 2 | Age Calculator
+Write a function called ageCalculator() that takes two arguments birth year and current year. 
+Calculate 2 possible ages based on those
+ years (two, because we don't know the birth month).
 
-    You should get the following results:
+You should get the following results:
 
-    You are either 29 or 28 */
+You are either 29 or 28 */
 
 
 
@@ -107,16 +107,46 @@ function Area_Volume(width, height, depth){
  document.write("Area= " +  Area_Volume(5, 7)[0]);
  document.write("<br>Volume= " +  Area_Volume(5, 7, 10)[1]);
  */
-function Product_Array(arr){
+/*
+function Product_Array(arr) {
     var result = 1;
     document.write(arr.length);
-    for (i = 0; i < arr.length; i++){
+    for (i = 0; i < arr.length; i++) {
         result *= arr[i];
     }
-        return(result);
- }
- my_arr = [1, 3, 7, 10, 2, 10];
- document.write("<br>Product of Array= " + Product_Array(my_arr));
+    return (result);
+}
+my_arr = [1, 3, 7, 10, 2, 10];
+document.write("<br>Product of Array= " + Product_Array(my_arr));
+*/
+
+/*
+1 Intermediate | Capitalize
+Write an anonymous JavaScript function to capitalize only the first letter of a string. 
+The function accepts only one string argument.
+
+E.g. If we pass the following string 'i am a web developer' we should get the message 
+'I am a web developer'
+
+Hint: Check JavaScript String charAt() Method
+*/
+
+
+var alf = (function() {
+
+    var text = "am a web developer"
+
+    var text2 = "i"
+
+    text2 = text2.toUpperCase()
+
+    return text2 + text
+}())
+
+
+document.write(alf)
+
+
 /*
 
 Basic 6 | Product
@@ -125,3 +155,12 @@ as many values in an array as you want.
 
 E.g. If we pass the following values 1, 3, 7, 10, 2 we should get the number 420 printed on the
  screen.*/
+/*
+ 1 Intermediate | Capitalize
+Write an anonymous JavaScript function to capitalize
+ only the first letter of a string. The function accepts only one string argument.
+
+E.g. If we pass the following string 'i am a web developer' we should
+ get the message 'I am a web developer'
+
+Hint: Check JavaScript String charAt() Method*/
