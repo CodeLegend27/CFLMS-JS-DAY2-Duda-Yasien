@@ -167,7 +167,7 @@ E.g.If user puts the following grades 3, 4, 5 the result should be:
     Sum: 12
 
 Average: 4
-*/
+
 function banane() {
 
     var a = document.getElementById("granny").value
@@ -181,11 +181,11 @@ function banane() {
     x = a + b + c
     y = x / 3
 
-    document.getElementById("ausgabe").innerHTML = ("Die Summe lautet " + x + " und der Durchschnitt beträgt " + y)
+    document.getElementById("ausgabe").innerHTML = ("Die Summe lautet " + x + " und der Durchschnitt beträgt " + y)}
 
 
+*/
 
-}
 
 
 
@@ -197,4 +197,38 @@ function should accept only one argument.
 
 E.g. If we call the function and pass the number of minutes 200 we should get the message 
 "200 minutes = 3 hour(s) and 20 minute(s)."
+
+
+function time(input){
+
+    hours = Math.floor(input/60);
+    minutes = input%60;
+
+    document.write(hours + " Stunden " + minutes + " Minuten<br>");
+
+}
+
+
+time(600);
 */
+
+function date(input){
+
+    a = new Date(input)
+
+    var date = new Date();
+    // date ; //# => Fri Apr 01 2011 11:14:50 GMT+0200 (CEST)
+    // date.setDate(date.getDate() - 1);
+    // date ; //# => Thu Mar 31 2011 11:14:50 GMT+0200 (CEST)
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+    year = a.getFullYear()
+    day = a.getDay()-1
+    day = days[day]
+    month = a.getMonth()
+    month = months[month]
+    daynumber = a.getDate()-1
+
+    document.write(day + " " + month + " " + daynumber + " "+ year + "<br>");
+}
+date("Feb 23, 2019");
